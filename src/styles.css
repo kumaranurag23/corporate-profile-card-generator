@@ -1,0 +1,203 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Profile Card Styles */
+.profile-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.profile-card-header {
+  position: relative;
+}
+
+.profile-card-actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profile-card-header img {
+  border-radius: 50%;
+}
+
+.profile-card-content {
+  padding: 1rem;
+}
+
+.profile-card-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card-content p {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card-content button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #007bff;
+  font-size: 0.875rem;
+  border: none;
+  background: none;
+  padding: 0.5rem 0;
+}
+
+.profile-card-content button:hover {
+  color: #0056b3;
+}
+
+/* Edit Form Styles */
+.edit-form {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  max-width: 30rem;
+  padding: 2rem;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.edit-form label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form input[type="color"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.edit-form input[type="file"] {
+  font-size: 0.875rem;
+}
+
+.edit-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edit-form .form-actions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form .form-actions button:hover {
+  background-color: #0056b3;
+}
+
+.edit-form .form-actions button.cancel {
+  background-color: #f0f0f0;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.edit-form .form-actions button.cancel:hover {
+  background-color: #ddd;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay .edit-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+}
+
+/* Add User Button */
+.add-user-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-user-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .profile-card-content {
+    padding: 1rem;
+  }
+
+  .edit-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
